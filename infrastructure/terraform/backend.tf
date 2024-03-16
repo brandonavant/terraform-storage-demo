@@ -1,9 +1,8 @@
+##
+# This is the backend configuration for the terraform state file.
+# It is stored in an Azure Storage Account.
+##
 terraform {
-
-  /**
-	 * This is the backend configuration for the terraform state file.
-	 * It is stored in an Azure Storage Account.
-	 */
   backend "azurerm" {
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
